@@ -8,6 +8,8 @@
 This repo does not include all assets necessary for compiling the game.
 A prior copy of the game is required to extract the assets.
 
+This line is a test line to ensure it all is working fine.
+
 ## Building native executables
 
 ### Linux
