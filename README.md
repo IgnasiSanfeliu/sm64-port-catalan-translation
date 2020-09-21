@@ -16,12 +16,12 @@ Els continguts, informació i instruccions del Port de SM64 estan detallats a co
 Aquest repositori no inclou totes les llibreries necessàries per a compilar el joc.
 Es requereix una còpia prèvia del joc per a extreure'n les llibreries.
 
-## Construint executables nadius
+## Construir executables nadius
 
 ### Linux
 
 1. Instal·lar els prerequisits (Ubuntu): `sudo apt install -y git build-essential pkg-config libusb-1.0-0-dev libsdl2-dev`.
-2. Clona el respositori: `git clone https://github.com/sm64-port/sm64-port.git`, which will create a directory `sm64-port` and then **enter** it `cd sm64-port`.
+2. Clona el respositori: `git clone https://github.com/sm64-port/sm64-port.git`, el qual crearà el directori `sm64-port`, llavors **insereix** `cd sm64-port`.
 3. Col·loca una ROM de Super Mario 64 anomenada `baserom.<VERSION>.z64` al directori arrel del repositori, on `VERSION` pot ser `us`, `jp`, o `eu`.
 4. Empra `make` per a construir-la. Qualifica la versió a partir de `make VERSION=<VERSION>`. Afegeix `-j4` per a millorar la velocitat de construcció (basat en el nombre de nuclis del processador disponibles).
 5. El binari de l'executable es trobarà a `build/<VERSION>_pc/sm64.<VERSION>.f3dex2e`.
@@ -39,56 +39,56 @@ Es requereix una còpia prèvia del joc per a extreure'n les llibreries.
 6. Empra `make` per a construir-la. Qualifica la versió a partir de `make VERSION=<VERSION>`. Afegeix `-j4` per a millorar la velocitat de construcció (basat en el nombre de nuclis del processador disponibles).
 7. El binari de l'executable es trobarà a `build/<VERSION>_pc/sm64.<VERSION>.f3dex2e.exe` dins del repositori.
 
-#### Troubleshooting (no traduït)
+#### Resolució de problemes
 
-1. If you get `make: gcc: command not found` or `make: gcc: No such file or directory` although the packages did successfully install, you probably launched the wrong MSYS2. Read the instructions again. The terminal prompt should contain "MINGW32" or "MINGW64" in purple text, and **NOT** "MSYS".
-2. If you get `Failed to open baserom.us.z64!` you failed to place the baserom in the repository. You can write `ls` to list the files in the current working directory. If you are in the `sm64-port` directory, make sure you see it here.
-3. If you get `make: *** No targets specified and no makefile found. Stop.`, you are not in the correct directory. Make sure the yellow text in the terminal ends with `sm64-port`. Use `cd <dir>` to enter the correct directory. If you write `ls` you should see all the project files, including `Makefile` if everything is correct.
-4. If you get any error, be sure MSYS2 packages are up to date by executing `pacman -Syu` and `pacman -Su`. If the MSYS2 window closes immediately after opening it, restart your computer.
-5. When you execute `gcc -v`, be sure you see `Target: i686-w64-mingw32` or `Target: x86_64-w64-mingw32`. If you see `Target: x86_64-pc-msys`, you either opened the wrong MSYS start menu entry or installed the incorrect gcc package.
+1. Si reps `make: gcc: command not found` o `make: gcc: No such file or directory` encara que els paquets s'hagin instal·lat adequadament, probablement hagis executat el MSYS2 erroni. Llegeix les instruccions de nou. El terminal ha d'incloure "MINGW32" o "MINGW64" en text lila, i **NO** "MSYS".
+2. Si reps `Failed to open baserom.us.z64!` has errat col·locant la ROM base al repositori. Pots escriure `ls` per a llistar tots els arxius al directori actual de treball. Si et trobes al directori `sm64-port`, comprova que hi és allà.
+3. Si reps `make: *** No targets specified and no makefile found. Stop.`, no ets al directori adequat. Comrpova que el text en groc al terminal finalitza amb `sm64-port`. Utilitza `cd <dir>` per a introduir el directori correcte. Si escrius `ls` hi apareixeran tots els arxius del projecte, incloent-hi `Makefile` si tot és correcte.
+4. Si reps cap error, comprova que els paquets d'MSYS2 estan actualitzats executant `pacman -Syu` i `pacman -Su`. Si la finestra d'MSYS2 es tanca immediatament reinicia el teu ordinador.
+5. Quan executis `gcc -v` comprova que hi és `Target: i686-w64-mingw32` o `Target: x86_64-w64-mingw32`. Si veus `Target: x86_64-pc-msys`, has obert el menú d'inici d'MSYS erroni o has instal·lat el paquet de gcc erroni.
 
 ### Debugging
 
 El codi pot ser debugat emprant `gdb`. A Linux instal·la el paquet `gdb`i executa `gdb <executable>`. A MSYS2 instal·la-ho executant `pacman -S winpty gdb` i executant `winpty gdb <executable>`. El programa `winpty` s'assegura que el teclat funciona adequadament al terminal. Considera també canviar el criteri d'execució (flag) `-mwindows` per `-mconsole` tant per a poder veure el "stdout/stderr" com per a poder prèmer CTRL+C per a interrompre el programa. Al "Makefile", assegura't que compiles les fonts emprant `-g` enlloc de `-O2` per a incloure símbols de debugging. Cerca un tutorial online per a utilitzar gdb.
 
-## ROM building
+## Construcció de la ROM 
 
 També és possible construir ROMs de Nintendo 64 amb aquest repositori. Dirigeix-te a https://github.com/n64decomp/sm64 per instruccions.
 
-## Project Structure (no traduït)
+## Estructura del projecte
 
 ```
 sm64
-├── actors: object behaviors, geo layout, and display lists
-├── asm: handwritten assembly code, rom header
-│   └── non_matchings: asm for non-matching sections
-├── assets: animation and demo data
-│   ├── anims: animation data
-│   └── demos: demo data
-├── bin: C files for ordering display lists and textures
-├── build: output directory
-├── data: behavior scripts, misc. data
-├── doxygen: documentation infrastructure
-├── enhancements: example source modifications
-├── include: header files
-├── levels: level scripts, geo layout, and display lists
-├── lib: SDK library code
-├── rsp: audio and Fast3D RSP assembly code
-├── sound: sequences, sound samples, and sound banks
-├── src: C source code for game
-│   ├── audio: audio code
-│   ├── buffers: stacks, heaps, and task buffers
-│   ├── engine: script processing engines and utils
-│   ├── game: behaviors and rest of game source
-│   ├── goddard: Mario intro screen
-│   ├── menu: title screen and file, act, and debug level selection menus
-│   └── pc: port code, audio and video renderer
-├── text: dialog, level names, act names
-├── textures: skybox and generic texture data
-└── tools: build tools
+├── actors: comportament d'ojectes, disposició dels terrenys, les llistes de visualització
+├── asm: codi assembly escrit a mà, capçalera (header) de la rom
+│   └── non_matchings: asm per a seccions no coincidents
+├── assets: animacions i dades de prova
+│   ├── anims: dades d'animacions
+│   └── demos: dades de prova
+├── bin: arxius en C per a endreçar llistes de visualització i textures
+├── build: directori de sortida
+├── data: scripts de comportament, dades miscel·lànies
+├── doxygen: documentació de la infraestructura
+├── enhancements: exemples de modificacions del codi font
+├── include: arxius de capçalera
+├── levels: scripts de nivells, disposició dels terrenys, llistes de visualització
+├── lib: codi de la lliberira SDK
+├── rsp: codi assembly de l'àudio i de Fast3D RSP
+├── sound: sequüències, mostres (samples) de so, i bancs de sons
+├── src: codi font en C del joc
+│   ├── audio:  codi de l'àudio
+│   ├── buffers: "stacks", "heaps", i buffers de tasques
+│   ├── engine: motors de processament d'scripts i útils
+│   ├── game: font dels comportaments de la resta del joc
+│   ├── goddard: pantalla intrductoria de Mario
+│   ├── menu: pantalla de títol i arxius, missions, i menus de sel·lecció de nivells de debug
+│   └── pc: codi del port, renderitzador d'àudio i vídeo
+├── text: diàlogs, noms de nivells, noms de missions
+├── textures: caixa del cel (skybox) i dades de textures genèriques
+└── tools: eines de construcció de l'executable
 ```
 
-## Contributing
+## Contribuir-hi
 
 Les "Pull requests" són benvingudes. Per canvis majors, obriu primer si us plau obriu primer una "issue" per a discutir que voldriueu canviar.
 
@@ -101,7 +101,7 @@ Discord oficial del projecte: https://discord.gg/7bcNTPK
 #### *Informació en anglès, per a llegir la versió catalana si us plau pujeu a munt.*
 
 The Super Mario 64 Catalan translation is created to bring the game to a new language using the SM64 Decompilation Port, so it is playable on all systems wanted.
-This project is **not** related, by any means, to the original Decompilation Project nor the Port teams.
+This project is **not** related, by any means, to the original Decompilation Project nor Port teams.
 
 The contents, info and instructions of the SM64 Port are detailed below:
 
