@@ -1,8 +1,6 @@
 # Super Mario 64 Port - Traducció al Català
 #### *Info in Catalan, to read the English version please scroll down.*
 
-*Text en traducció, disculpeu les molèsties.*
-
 La traducció catalana de Super Mario 64 ha estat creada per a portar el joc a un nou idioma emprant el Port de la Decompilació de SM64, per a que sigui jugable a tots els sistemes que es vulgui.
 Aquest projecte **no** està relacionat, de cap manera, amb els equips responsables del Projecte de Decompilació ni del Port.
 
