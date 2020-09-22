@@ -6,7 +6,7 @@ Aquest projecte **no** està relacionat, de cap manera, amb els equips responsab
 
 Els continguts, informació i instruccions del Port de SM64 estan detallats a continuació:
 
-- Aquest repositori conté l'íntegra decompilació de Super Mario &4 (J), (U) i (E) amb excepcions menors al subsistema d'àudio.
+- Aquest repositori conté l'íntegra decompilació de Super Mario 64 (J), (U) i (E) amb excepcions menors al subsistema d'àudio.
 - Les nomenclatures i documentació del codi font i de les estructures de dades estan encara en procés.
 - Els esforços per a decompilar la ROM Shindou avança constantment a una construcció parella.
 - A part de la Nintendo 64, també pot córrer nativament a Windows i Linux.
