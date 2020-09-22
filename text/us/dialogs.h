@@ -125,7 +125,7 @@ comencarem.\n\
 \n\
 Llestos....\n\
 \n\
-//Endavant!////Millor no"))
+//Endavant!//Millor no"))
 
 //FET
 DEFINE_DIALOG(DIALOG_006, 1, 3, 30, 200, _("\
