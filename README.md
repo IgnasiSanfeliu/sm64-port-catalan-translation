@@ -1,5 +1,5 @@
 # Super Mario 64 Port - Traducció al Català
-#### *Info in Catalan, to read the English version please scroll down.*
+#### [*Info in Catalan, to read the English version please click here.*](https://github.com/Nilcm01/sm64-port-catalan-translation#super-mario-64-port---catalan-translation)
 
 La traducció catalana de Super Mario 64 ha estat creada per a portar el joc a un nou idioma emprant el Port de la Decompilació de SM64, per a que sigui jugable a tots els sistemes que es vulgui.
 Aquest projecte **no** està relacionat, de cap manera, amb els equips responsables del Projecte de Decompilació ni del Port.
@@ -110,7 +110,7 @@ Discord oficial del projecte: https://discord.gg/7bcNTPK
 
 
 # Super Mario 64 Port - Catalan Translation
-#### *Informació en anglès, per a llegir la versió catalana si us plau pujeu a munt.*
+#### [*Informació en anglès, per a llegir la versió catalana si us plau cliqueu aquí.*](https://github.com/Nilcm01/sm64-port-catalan-translation#super-mario-64-port---traducci%C3%B3-al-catal%C3%A0)
 
 The Super Mario 64 Catalan translation is created to bring the game to a new language using the SM64 Decompilation Port, so it is playable on all systems wanted.
 This project is **not** related, by any means, to the original Decompilation Project nor Port teams.
