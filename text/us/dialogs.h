@@ -278,15 +278,15 @@ DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
 Estimat Mario:\n\
 Si us plau, vine al\n\
 castell. He fornejat\n\
-un pastís per a tu.\n\
+un pastis per a tu.\n\
 Atentament...\n\
 Princesa Toadstool"))
 
 DEFINE_DIALOG(DIALOG_021, 1, 5, 95, 200, _("\
 Benvingut.\n\
-Ningú és a casa!\n\
+Ningu es a casa!\n\
 Ara " SCRAM "\n\
-i no tornis mai més!\n\
+i no tornis mai mes!\n\
 Gwa ha ha!"))
 
 DEFINE_DIALOG(DIALOG_022, 1, 2, 95, 200, _("\
@@ -309,25 +309,25 @@ DEFINE_DIALOG(DIALOG_025, 1, 4, 95, 200, _("\
 Necessites el poder de\n\
 3 Estrelles per a obrir\n\
 aquesta porta. Necessites\n\
-[%] Estrelles més"))
+[%] Estrelles mes"))
 
 DEFINE_DIALOG(DIALOG_026, 1, 4, 95, 200, _("\
 Necessites el poder de\n\
 8 Estrelles per a obrir\n\
 aquesta porta. Necessites\n\
-[%] Estrelles més"))
+[%] Estrelles mes"))
 
 DEFINE_DIALOG(DIALOG_027, 1, 4, 95, 200, _("\
 Necessites el poder de\n\
 30 Estrelles per a obrir\n\
 aquesta porta. Necessites\n\
-[%] Estrelles més"))
+[%] Estrelles mes"))
 
 DEFINE_DIALOG(DIALOG_028, 1, 4, 95, 200, _("\
 Necessites el poder de\n\
 50 Estrelles per a obrir\n\
 aquesta porta. Necessites\n\
-[%] Estrelles més"))
+[%] Estrelles mes"))
 
 DEFINE_DIALOG(DIALOG_029, 1, 5, 95, 200, _("\
 Per obrir la porta que\n\
@@ -390,12 +390,12 @@ press [Z] to land."))
 DEFINE_DIALOG(DIALOG_033, 1, 6, 30, 200, _("\
 Ciao! Has arribat al castell\n\
 de la Princesa Peach\n\
-a través d'una canonada.\n\
-Emprar el comandament és\n\
+a traves d'una canonada.\n\
+Emprar el comandament es\n\
 bufar i fer ampolles! Prem\n\
 [A] per saltar i [B] per\n\
 atacar. Prem [B] per a llegir\n\
-cartells, també. Usa la\n\
+cartells, tambe. Usa la\n\
 palanca de control esquerra\n\
 del comandament per moure en\n\
 Mario arreu. Ara, dirigeix-te\n\
@@ -600,8 +600,8 @@ practice. You don't stand\n\
 a chance without them."))
 
 DEFINE_DIALOG(DIALOG_047, 1, 2, 95, 200, _("\
-Hola! Prepararé el\n\
-canó per a tu!"))
+Hola! Preparare el\n\
+cano per a tu!"))
 
 DEFINE_DIALOG(DIALOG_048, 1, 4, 30, 200, _("\
 Snow Mountain Summit\n\
@@ -2032,8 +2032,7 @@ There are 120 in all???\n\
 \n\
 Amazing! There were some\n\
 in the castle that I\n\
-missed??!!\n\
-\n\
+missed?!\n\
 \n\
 Now I see peace\n\
 returning to the world...\n\
