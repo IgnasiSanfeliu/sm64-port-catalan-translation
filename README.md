@@ -12,17 +12,29 @@ Els continguts, informació i instruccions del Port de SM64 estan detallats a co
 - A part de la Nintendo 64, també pot córrer nativament a Windows i Linux.
 
 Aquest repositori no inclou totes les llibreries necessàries per a compilar el joc.
-Es requereix una còpia prèvia del joc per a extreure'n les llibreries.
+Es requereix una còpia prèvia del joc (ROM) per a extreure'n les llibreries. Aquesta ROM ha de ser del següent tipus:
+
+- Regió: **U** o **US** (Estats Units).
+- Extensió: .z64
+- *Exemple: Super Mario 64 (U).z64*
+
+**IMPORTANT**: De moment, l'única regió testada és la U/US; per tant, si us plau empreu aquesta versió per a assegurar que la traducció s'implementa adequadament.
+
+## Llançaments
+
+Per descarregar la darrera versió funcional si us plau consulteu aquest enllaç i després seguiu les instruccions detallades a baix:
+
+https://github.com/Nilcm01/sm64-port-catalan-translation/releases
 
 ## Construir executables nadius
 
 ### Linux
 
 1. Instal·lar els prerequisits (Ubuntu): `sudo apt install -y git build-essential pkg-config libusb-1.0-0-dev libsdl2-dev`.
-2. Clona el respositori: `git clone https://github.com/sm64-port/sm64-port.git`, el qual crearà el directori `sm64-port`, llavors **insereix** `cd sm64-port`.
-3. Col·loca una ROM de Super Mario 64 anomenada `baserom.<VERSION>.z64` al directori arrel del repositori, on `VERSION` pot ser `us`, `jp`, o `eu`.
-4. Empra `make` per a construir-la. Qualifica la versió a partir de `make VERSION=<VERSION>`. Afegeix `-j4` per a millorar la velocitat de construcció (basat en el nombre de nuclis del processador disponibles).
-5. El binari de l'executable es trobarà a `build/<VERSION>_pc/sm64.<VERSION>.f3dex2e`.
+2. Clona el respositori: `git clone https://github.com/Nilcm01/sm64-port-catalan-translation.git`, el qual crearà el directori `sm64-port-catalan-translation`, llavors **insereix** `cd sm64-port-catalan-translation`.
+3. Col·loca una ROM de Super Mario 64 anomenada `baserom.us.z64` al directori arrel del repositori.
+4. Empra `make` per a construir-la. Qualifica la versió a partir de `make VERSION=us`. Afegeix `-j4` per a millorar la velocitat de construcció (basat en el nombre de nuclis disponibles del processador).
+5. El binari de l'executable es trobarà a `build/us_pc/sm64.us.f3dex2e`.
 
 ### Windows
 
@@ -32,16 +44,16 @@ Es requereix una còpia prèvia del joc per a extreure'n les llibreries.
   * 32-bit (també funciona en sistemes de 64-bits): Executa "MSYS2 MinGW 32-bit" i instal·la: `pacman -S git make python3 mingw-w64-i686-gcc`
   * **NO** instal·lis per error el paquet anomenat simplement `gcc`.
 3. El terminal d'MSYS2 té un _current working directory_ (directori actual de treball) que inicialment és `C:\msys64\home\<username>` (directori d'usuari). A la finestra de comandes veuràs el directori de treball actual de color groc. `~` és un àlies per a directori d'usuari. Pots canviar el directori actual de treball a `Documents` usant `cd /c/Users/<username>/Documents`.
-4. Clona el repositori: `git clone https://github.com/sm64-port/sm64-port.git`, el qual crearà el directori `sm64-port`, llavors **insereix** `cd sm64-port`.
-5. Col·loca una ROM de *Super Mario 64* anomenada `baserom.<VERSION>.z64` al directori arrel per a l'extracció de les llibreries, on `VERSION` pot ser `us`, `jp`, o `eu`.
-6. Empra `make` per a construir-la. Qualifica la versió a partir de `make VERSION=<VERSION>`. Afegeix `-j4` per a millorar la velocitat de construcció (basat en el nombre de nuclis del processador disponibles).
-7. El binari de l'executable es trobarà a `build/<VERSION>_pc/sm64.<VERSION>.f3dex2e.exe` dins del repositori.
+4. Clona el repositori: `git clone https://github.com/Nilcm01/sm64-port-catalan-translation.git`, el qual crearà el directori `sm64-port-catalan-translation`, llavors **insereix** `cd sm64-port`.
+5. Col·loca una ROM de *Super Mario 64* anomenada `baserom.us.z64` al directori arrel per a l'extracció de les llibreries.
+6. Empra `make` per a construir-la. Qualifica la versió a partir de `make VERSION=us`. Afegeix `-j4` per a millorar la velocitat de construcció (basat en el nombre de nuclis del processador disponibles).
+7. El binari de l'executable es trobarà a `build/us_pc/sm64.us.f3dex2e.exe` dins del repositori.
 
 #### Resolució de problemes
 
 1. Si reps `make: gcc: command not found` o `make: gcc: No such file or directory` encara que els paquets s'hagin instal·lat adequadament, probablement hagis executat el MSYS2 erroni. Llegeix les instruccions de nou. El terminal ha d'incloure "MINGW32" o "MINGW64" en text lila, i **NO** "MSYS".
-2. Si reps `Failed to open baserom.us.z64!` has errat col·locant la ROM base al repositori. Pots escriure `ls` per a llistar tots els arxius al directori actual de treball. Si et trobes al directori `sm64-port`, comprova que hi és allà.
-3. Si reps `make: *** No targets specified and no makefile found. Stop.`, no ets al directori adequat. Comrpova que el text en groc al terminal finalitza amb `sm64-port`. Utilitza `cd <dir>` per a introduir el directori correcte. Si escrius `ls` hi apareixeran tots els arxius del projecte, incloent-hi `Makefile` si tot és correcte.
+2. Si reps `Failed to open baserom.us.z64!` has errat col·locant la ROM base al repositori. Pots escriure `ls` per a llistar tots els arxius al directori actual de treball. Si et trobes al directori `sm64-port-catalan-translation`, comprova que hi és allà.
+3. Si reps `make: *** No targets specified and no makefile found. Stop.`, no ets al directori adequat. Comrpova que el text en groc al terminal finalitza amb `sm64-port-catalan-translation`. Utilitza `cd <dir>` per a introduir el directori correcte. Si escrius `ls` hi apareixeran tots els arxius del projecte, incloent-hi `Makefile` si tot és correcte.
 4. Si reps cap error, comprova que els paquets d'MSYS2 estan actualitzats executant `pacman -Syu` i `pacman -Su`. Si la finestra d'MSYS2 es tanca immediatament reinicia el teu ordinador.
 5. Quan executis `gcc -v` comprova que hi és `Target: i686-w64-mingw32` o `Target: x86_64-w64-mingw32`. Si veus `Target: x86_64-pc-msys`, has obert el menú d'inici d'MSYS erroni o has instal·lat el paquet de gcc erroni.
 
@@ -92,6 +104,8 @@ Les "Pull requests" són benvingudes. Per canvis majors, obriu primer si us plau
 
 Executa `clang-format` al vostre codi per a assegurar-vos que compleix els estàndards de codi del projecte.
 
+Contacte del projecte de traducció: https://twitter.com/PelochoRockea
+
 Discord oficial del projecte: https://discord.gg/7bcNTPK
 
 
@@ -109,17 +123,29 @@ The contents, info and instructions of the SM64 Port are detailed below:
 - Beyond Nintendo 64, it can also target Linux and Windows natively.
 
 This repo does not include all assets necessary for compiling the game.
-A prior copy of the game is required to extract the assets.
+A prior copy of the game (ROM) is required to extract the assets. This ROM has to be like this:
+
+- Region: **U** o **US** (United States).
+- Extension: .z64
+- *Exemple: Super Mario 64 (U).z64*
+
+**IMPORTANT**: By now, the only region tested is U/US, so please use this version to ensure that the translation applies successfully.
+
+## Releases
+
+To download the latest working release please refer to this link and then follow the instructions detailed below:
+
+https://github.com/Nilcm01/sm64-port-catalan-translation/releases
 
 ## Building native executables
 
 ### Linux
 
 1. Install prerequisites (Ubuntu): `sudo apt install -y git build-essential pkg-config libusb-1.0-0-dev libsdl2-dev`.
-2. Clone the repo: `git clone https://github.com/sm64-port/sm64-port.git`, which will create a directory `sm64-port` and then **enter** it `cd sm64-port`.
-3. Place a Super Mario 64 ROM called `baserom.<VERSION>.z64` into the repository's root directory for asset extraction, where `VERSION` can be `us`, `jp`, or `eu`.
-4. Run `make` to build. Qualify the version through `make VERSION=<VERSION>`. Add `-j4` to improve build speed (hardware dependent based on the amount of CPU cores available).
-5. The executable binary will be located at `build/<VERSION>_pc/sm64.<VERSION>.f3dex2e`.
+2. Clone the repo: `git clone https://github.com/Nilcm01/sm64-port-catalan-translation.git`, which will create a directory `sm64-port-catalan-translation` and then **enter** it `cd sm64-port-catalan-translation.git`.
+3. Place a Super Mario 64 ROM called `baserom.us.z64` into the repository's root directory for asset extraction.
+4. Run `make` to build. Qualify the version through `make VERSION=us`. Add `-j4` to improve build speed (hardware dependent based on the amount of CPU cores available).
+5. The executable binary will be located at `build/us_pc/sm64.us.f3dex2e`.
 
 ### Windows
 
@@ -129,16 +155,16 @@ A prior copy of the game is required to extract the assets.
   * 32-bit (will also work on 64-bit machines): Launch "MSYS2 MinGW 32-bit" and install: `pacman -S git make python3 mingw-w64-i686-gcc`
   * Do **NOT** by mistake install the package called simply `gcc`.
 3. The MSYS2 terminal has a _current working directory_ that initially is `C:\msys64\home\<username>` (home directory). At the prompt, you will see the current working directory in yellow. `~` is an alias for the home directory. You can change the current working directory to `My Documents` by entering `cd /c/Users/<username>/Documents`.
-4. Clone the repo: `git clone https://github.com/sm64-port/sm64-port.git`, which will create a directory `sm64-port` and then **enter** it `cd sm64-port`.
-5. Place a *Super Mario 64* ROM called `baserom.<VERSION>.z64` into the repository's root directory for asset extraction, where `VERSION` can be `us`, `jp`, or `eu`.
-6. Run `make` to build. Qualify the version through `make VERSION=<VERSION>`. Add `-j4` to improve build speed (hardware dependent based on the amount of CPU cores available).
-7. The executable binary will be located at `build/<VERSION>_pc/sm64.<VERSION>.f3dex2e.exe` inside the repository.
+4. Clone the repo: `git clone https://github.com/Nilcm01/sm64-port-catalan-translation.git`, which will create a directory `sm64-port-catalan-translation` and then **enter** it `cd sm64-port-catalan-translation.git`.
+5. Place a *Super Mario 64* ROM called `baserom.us.z64` into the repository's root directory for asset extraction.
+6. Run `make` to build. Qualify the version through `make VERSION=us`. Add `-j4` to improve build speed (hardware dependent based on the amount of CPU cores available).
+7. The executable binary will be located at `build/us_pc/sm64.us.f3dex2e.exe` inside the repository.
 
 #### Troubleshooting
 
 1. If you get `make: gcc: command not found` or `make: gcc: No such file or directory` although the packages did successfully install, you probably launched the wrong MSYS2. Read the instructions again. The terminal prompt should contain "MINGW32" or "MINGW64" in purple text, and **NOT** "MSYS".
-2. If you get `Failed to open baserom.us.z64!` you failed to place the baserom in the repository. You can write `ls` to list the files in the current working directory. If you are in the `sm64-port` directory, make sure you see it here.
-3. If you get `make: *** No targets specified and no makefile found. Stop.`, you are not in the correct directory. Make sure the yellow text in the terminal ends with `sm64-port`. Use `cd <dir>` to enter the correct directory. If you write `ls` you should see all the project files, including `Makefile` if everything is correct.
+2. If you get `Failed to open baserom.us.z64!` you failed to place the baserom in the repository. You can write `ls` to list the files in the current working directory. If you are in the `sm64-port-catalan-translation` directory, make sure you see it here.
+3. If you get `make: *** No targets specified and no makefile found. Stop.`, you are not in the correct directory. Make sure the yellow text in the terminal ends with `sm64-port-catalan-translation`. Use `cd <dir>` to enter the correct directory. If you write `ls` you should see all the project files, including `Makefile` if everything is correct.
 4. If you get any error, be sure MSYS2 packages are up to date by executing `pacman -Syu` and `pacman -Su`. If the MSYS2 window closes immediately after opening it, restart your computer.
 5. When you execute `gcc -v`, be sure you see `Target: i686-w64-mingw32` or `Target: x86_64-w64-mingw32`. If you see `Target: x86_64-pc-msys`, you either opened the wrong MSYS start menu entry or installed the incorrect gcc package.
 
@@ -185,9 +211,10 @@ sm64
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to
-discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Run `clang-format` on your code to ensure it meets the project's coding standards.
+
+Translation project contact: https://twitter.com/PelochoRockea
 
 Official project Discord: https://discord.gg/7bcNTPK
