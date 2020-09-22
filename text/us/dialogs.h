@@ -8,12 +8,12 @@
 #define YOU_CANT_SWIM_IN_IT "Its too heavy to swim\nwith."
 #define GIVE_UP "give up"
 #else
-#define COMRADES "comrades"
-#define PLASTERED "plastered"
-#define SCAM_ME "scam\nME. "
-#define SCRAM "scram--"
-#define YOU_CANT_SWIM_IN_IT "You can't swim in it."
-#define GIVE_UP "give"
+#define COMRADES "camarades"
+#define PLASTERED "colpejat"
+#define SCAM_ME "enganyar!\n "
+#define SCRAM "perd-te"
+#define YOU_CANT_SWIM_IN_IT "No hi pots nadar."
+#define GIVE_UP "em rendeixo"
 #endif
 
 DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
@@ -275,65 +275,65 @@ Shhh! Please walk\n\
 quietly in the hallway!"))
 
 DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
-Dear Mario:\n\
-Please come to the\n\
-castle. I've baked\n\
-a cake for you.\n\
-Yours truly--\n\
-Princess Toadstool"))
+Estimat Mario:\n\
+Si us plau, vine al\n\
+castell. He fornejat\n\
+un pastis per a tu.\n\
+Atentament...\n\
+Princesa Toadstool"))
 
 DEFINE_DIALOG(DIALOG_021, 1, 5, 95, 200, _("\
-Welcome.\n\
-No one's home!\n\
-Now " SCRAM "\n\
-and don't come back!\n\
+Benvingut.\n\
+Ningu es a casa!\n\
+Ara " SCRAM "\n\
+i no tornis mai mes!\n\
 Gwa ha ha!"))
 
 DEFINE_DIALOG(DIALOG_022, 1, 2, 95, 200, _("\
-You need a key to open\n\
-this door."))
+Necessites una clau per\n\
+obrir aquesta porta."))
 
 DEFINE_DIALOG(DIALOG_023, 1, 3, 95, 200, _("\
-This key doesn't fit!\n\
-Maybe it's for the\n\
-basement..."))
+Aquesta clau no encaixa!\n\
+Possiblement sigui\n\
+pel soterrani..."))
 
 DEFINE_DIALOG(DIALOG_024, 1, 5, 95, 200, _("\
-You need Star power to\n\
-open this door. Recover a\n\
-Power Star from an enemy\n\
-inside one of the castle's\n\
-paintings."))
+Necessites una Estrella\n\
+per a obrir aquesta porta.\n\
+recupera'n una de l'enemic\n\
+dins d'un dels quadres\n\
+del castell."))
 
 DEFINE_DIALOG(DIALOG_025, 1, 4, 95, 200, _("\
-It takes the power of\n\
-3 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+Necessites el poder de\n\
+3 Estrelles per a obrir\n\
+aquesta porta. Necessites\n\
+[%] Estrelles mes"))
 
 DEFINE_DIALOG(DIALOG_026, 1, 4, 95, 200, _("\
-It takes the power of\n\
-8 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+Necessites el poder de\n\
+8 Estrelles per a obrir\n\
+aquesta porta. Necessites\n\
+[%] Estrelles mes"))
 
 DEFINE_DIALOG(DIALOG_027, 1, 4, 95, 200, _("\
-It takes the power of\n\
-30 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+Necessites el poder de\n\
+30 Estrelles per a obrir\n\
+aquesta porta. Necessites\n\
+[%] Estrelles mes"))
 
 DEFINE_DIALOG(DIALOG_028, 1, 4, 95, 200, _("\
-It takes the power of\n\
-50 Stars to open this\n\
-door. You need [%] more\n\
-Stars."))
+Necessites el poder de\n\
+50 Estrelles per a obrir\n\
+aquesta porta. Necessites\n\
+[%] Estrelles mes"))
 
 DEFINE_DIALOG(DIALOG_029, 1, 5, 95, 200, _("\
-To open the door that\n\
-leads to the 『endless』\n\
-stairs, you need 70\n\
-Stars.\n\
+Per obrir la porta que\n\
+du a les escales\n\
+『infinites』 necessites\n\
+70 Estrelles.\n\
 Bwa ha ha!"))
 
 DEFINE_DIALOG(DIALOG_030, 1, 6, 30, 200, _("\
@@ -388,18 +388,18 @@ around while flying, and\n\
 press [Z] to land."))
 
 DEFINE_DIALOG(DIALOG_033, 1, 6, 30, 200, _("\
-Ciao! You've reached\n\
-Princess Toadstool's\n\
-castle via a warp pipe.\n\
-Using the controller is a\n\
-piece of cake. Press [A] to\n\
-jump and [B] to attack.\n\
-Press [B] to read signs,\n\
-too. Use the Control Stick\n\
-in the center of the\n\
-controller to move Mario\n\
-around. Now, head for\n\
-the castle."))
+Ciao! Has arribat al castell\n\
+de la Princesa Peach\n\
+a traves d'una canonada.\n\
+Emprar el comandament es\n\
+bufar i fer ampolles! Prem\n\
+[A] per saltar i [B] per\n\
+atacar. Prem [B] per a llegir\n\
+cartells, tambe. Usa la\n\
+palanca de control esquerra\n\
+del comandament per moure en\n\
+Mario arreu. Ara, dirigeix-te\n\
+al castell."))
 
 DEFINE_DIALOG(DIALOG_034, 1, 6, 30, 200, _("\
 Good afternoon. The\n\
@@ -482,9 +482,9 @@ a better sledder!\n\
 Better luck next time!"))
 
 DEFINE_DIALOG(DIALOG_038, 1, 3, 95, 200, _("\
-Reacting to the Star\n\
-power, the door slowly\n\
-opens."))
+Reaccionant al poder\n\
+de l'estrella, la porta\n\
+s'obre lentament."))
 
 DEFINE_DIALOG(DIALOG_039, 1, 4, 30, 200, _("\
 No visitors allowed,\n\
@@ -600,8 +600,8 @@ practice. You don't stand\n\
 a chance without them."))
 
 DEFINE_DIALOG(DIALOG_047, 1, 2, 95, 200, _("\
-Hi! I'll prepare the\n\
-cannon for you!"))
+Hola! Preparare el\n\
+cano per a tu!"))
 
 DEFINE_DIALOG(DIALOG_048, 1, 4, 30, 200, _("\
 Snow Mountain Summit\n\
@@ -2032,8 +2032,7 @@ There are 120 in all???\n\
 \n\
 Amazing! There were some\n\
 in the castle that I\n\
-missed??!!\n\
-\n\
+missed?!\n\
 \n\
 Now I see peace\n\
 returning to the world...\n\
