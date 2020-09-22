@@ -1,17 +1,17 @@
 // Parameters: dialog enum ID, (unused), lines per box, left offset, width
 
 #ifdef VERSION_EU
-#define COMRADES "friends"
-#define PLASTERED "splattered"
-#define SCAM_ME "cheat!\n"
-#define SCRAM "get lost"
-#define YOU_CANT_SWIM_IN_IT "Its too heavy to swim\nwith."
-#define GIVE_UP "give up"
+#define COMRADES "camarades"
+#define PLASTERED "colpejat"
+#define SCAM_ME "enganyar!\n"
+#define SCRAM "fuig"
+#define YOU_CANT_SWIM_IN_IT "No hi pots nadar."
+#define GIVE_UP "em rendeixo"
 #else
 #define COMRADES "camarades"
 #define PLASTERED "colpejat"
 #define SCAM_ME "enganyar!\n "
-#define SCRAM "perd-te"
+#define SCRAM "fuig"
 #define YOU_CANT_SWIM_IN_IT "No hi pots nadar."
 #define GIVE_UP "em rendeixo"
 #endif
@@ -91,51 +91,58 @@ waiting for you. Be sure\n\
 to talk to them--they'll\n\
 set up cannons for you."))
 
+//FET
 DEFINE_DIALOG(DIALOG_004, 1, 3, 95, 200, _("\
-We're peace-loving\n\
-Bob-ombs, so we don't use\n\
-cannons.\n\
-But if you'd like\n\
-to blast off, we don't\n\
-mind. Help yourself.\n\
-We'll prepare all of the\n\
-cannons in this course for\n\
-you to use. Bon Voyage!"))
+Nosaltres som Bob-oms\n\
+pacifics, i per aixo no\n\
+utilitzem canons.\n\
+Pero si tu vols\n\
+llencar-t'hi no ens\n\
+importa. Encarrega-te'n\n\
+tu mateix. Et prepararem\n\
+tots els canons d'aquest\n\
+mon per a tu. Bon Viatge!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_005, 1, 3, 30, 200, _("\
-Hey, Mario! Is it true\n\
-that you beat the Big\n\
-Bob-omb? Cool!\n\
-You must be strong. And\n\
-pretty fast. So, how fast\n\
-are you, anyway?\n\
-Fast enough to beat me...\n\
-Koopa the Quick? I don't\n\
-think so. Just try me.\n\
-How about a race to the\n\
-mountaintop, where the\n\
-Big Bob-omb was?\n\
-Whaddya say? When I say\n\
-『Go,』 let the race begin!\n\
+Ey Mario! Es cert que\n\
+has derrotat el Gran\n\
+Bob-omb? Genial!\n\
+Deus ser fort. I ben\n\
+rapid. I, per cert,\n\
+com de rapid ets?\n\
+Prou rapid com per\n\
+derrotar-me a mi...\n\
+Koopa el Rapid? No\n\
+ho crec. Posa'm a prova\n\
+si vols. Que et sembla\n\
+una cursa fins al cim\n\
+del turo, on hi era\n\
+el gran Bob-omb?\n\
+Que me'n dius? quan\n\
+digui 『Endavant,』\n\
+comencarem.\n\
 \n\
-Ready....\n\
+Llestos....\n\
 \n\
-//Go!////Don't Go"))
+//Endavant!////Millor no"))
 
+//FET
 DEFINE_DIALOG(DIALOG_006, 1, 3, 30, 200, _("\
-Hey!!! Don't try to " SCAM_ME
-"You've gotta run\n\
-the whole course.\n\
-Later. Look me up when\n\
-you want to race for\n\
-real."))
+Ei!!! No em vulguis " SCAM_ME
+" Has de correr la\n\
+cursa sencera.\n\
+Quan en un altre moment\n\
+vulguis correr de debo\n\
+vine'm a buscar."))
 
+//FET
 DEFINE_DIALOG(DIALOG_007, 1, 5, 30, 200, _("\
-Hufff...fff...pufff...\n\
-Whoa! You...really...are...\n\
-fast! A human blur!\n\
-Here you go--you've won\n\
-it, fair and square!"))
+Ufff...fff...pufff...\n\
+Bua! Tu...realment...ets...\n\
+rapid! Un home bala!\n\
+Aqui la tens, te l'has\n\
+guanyat justament!"))
 
 DEFINE_DIALOG(DIALOG_008, 1, 4, 30, 200, _("\
 BEWARE OF CHAIN CHOMP\n\
@@ -214,29 +221,35 @@ power from the castle.\n\
 Do you want to Save?\n\
 //Yes////No"))
 
+//FET
 DEFINE_DIALOG(DIALOG_014, 1, 4, 30, 200, _("\
-Wow! Another Power Star!\n\
-Mario gains more courage\n\
-from the power of the\n\
-castle.\n\
-Do you want to Save?\n\
+Uau! Una altra Estrella!\n\
+En Mario s'encoratja\n\
+gracies al poder del\n\
+castell.\n\
+Vols desar la partida?\n\
 \n\
-//You Bet//Not Now"))
+//Esclar//Ara no"))
 
+//FET
 DEFINE_DIALOG(DIALOG_015, 1, 4, 30, 200, _("\
-You can punch enemies to\n\
-knock them down. Press [A]\n\
-to jump, [B] to punch.\n\
-Press [A] then [B] to Kick.\n\
-To pick something up,\n\
-press [B], too. To throw\n\
-something you're holding,\n\
-press [B] again."))
+Pots colpejar enemics per\n\
+a derrotar-los. Prem [A]\n\
+per saltar, [B] per a\n\
+donar un cop de puny.\n\
+Prem [A] i despres [B]\n\
+donar una puntada de peu.\n\
+Per agafar quelcom prem [B],\n\
+tambe. Per llencar el que\n\
+duguis a sobre prem\n\
+[B] de nou"))
 
-DEFINE_DIALOG(DIALOG_016, 1, 3, 30, 200, _("\
-Hop on the shiny shell and\n\
-ride wherever you want to\n\
-go! Shred those enemies!"))
+//FET
+DEFINE_DIALOG(DIALOG_016, 1, 4, 30, 200, _("\
+Salta sobre la closca\n\
+brillant i patina alla on\n\
+vulguis! Carrega't tots\n\
+els enemics!"))
 
 DEFINE_DIALOG(DIALOG_017, 1, 4, 30, 200, _("\
 I'm the Big Bob-omb, lord\n\
@@ -270,10 +283,12 @@ I'm sleeping because...\n\
 like being disturbed.\n\
 Please walk quietly."))
 
+//FET
 DEFINE_DIALOG(DIALOG_019, 1, 2, 30, 200, _("\
-Shhh! Please walk\n\
-quietly in the hallway!"))
+Shhht! Si us plau, camina\n\
+silenciosament al passadis!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
 Estimat Mario:\n\
 Si us plau, vine al\n\
@@ -282,6 +297,7 @@ un pastis per a tu.\n\
 Atentament...\n\
 Princesa Toadstool"))
 
+//FET - COMPROVAT
 DEFINE_DIALOG(DIALOG_021, 1, 5, 95, 200, _("\
 Benvingut.\n\
 Ningu es a casa!\n\
@@ -289,15 +305,18 @@ Ara " SCRAM "\n\
 i no tornis mai mes!\n\
 Gwa ha ha!"))
 
+//FET - COMPROVAT
 DEFINE_DIALOG(DIALOG_022, 1, 2, 95, 200, _("\
 Necessites una clau per\n\
 obrir aquesta porta."))
 
+//FET
 DEFINE_DIALOG(DIALOG_023, 1, 3, 95, 200, _("\
 Aquesta clau no encaixa!\n\
-Possiblement sigui\n\
+Probablement sigui\n\
 pel soterrani..."))
 
+//FET - COMPROVAT
 DEFINE_DIALOG(DIALOG_024, 1, 5, 95, 200, _("\
 Necessites una Estrella\n\
 per a obrir aquesta porta.\n\
@@ -305,30 +324,35 @@ recupera'n una de l'enemic\n\
 dins d'un dels quadres\n\
 del castell."))
 
+//FET - COMPROVAT
 DEFINE_DIALOG(DIALOG_025, 1, 4, 95, 200, _("\
 Necessites el poder de\n\
 3 Estrelles per a obrir\n\
 aquesta porta. Necessites\n\
 [%] Estrelles mes"))
 
+//FET - COMPROVAT
 DEFINE_DIALOG(DIALOG_026, 1, 4, 95, 200, _("\
 Necessites el poder de\n\
 8 Estrelles per a obrir\n\
 aquesta porta. Necessites\n\
 [%] Estrelles mes"))
 
+//FET
 DEFINE_DIALOG(DIALOG_027, 1, 4, 95, 200, _("\
 Necessites el poder de\n\
 30 Estrelles per a obrir\n\
 aquesta porta. Necessites\n\
 [%] Estrelles mes"))
 
+//FET
 DEFINE_DIALOG(DIALOG_028, 1, 4, 95, 200, _("\
 Necessites el poder de\n\
 50 Estrelles per a obrir\n\
 aquesta porta. Necessites\n\
 [%] Estrelles mes"))
 
+//FET
 DEFINE_DIALOG(DIALOG_029, 1, 5, 95, 200, _("\
 Per obrir la porta que\n\
 du a les escales\n\
@@ -387,19 +411,24 @@ Use the [C] Buttons to look\n\
 around while flying, and\n\
 press [Z] to land."))
 
+//FET
 DEFINE_DIALOG(DIALOG_033, 1, 6, 30, 200, _("\
-Ciao! Has arribat al castell\n\
-de la Princesa Peach\n\
-a traves d'una canonada.\n\
-Emprar el comandament es\n\
-bufar i fer ampolles! Prem\n\
-[A] per saltar i [B] per\n\
-atacar. Prem [B] per a llegir\n\
-cartells, tambe. Usa la\n\
-palanca de control esquerra\n\
-del comandament per moure en\n\
-Mario arreu. Ara, dirigeix-te\n\
-al castell."))
+Ciao! Has arribat al\n\
+castell de la Princesa\n\
+Peach a traves d'una\n\
+canonada. Emprar el\n\
+comandament es bufar\n\
+i fer ampolles!\n\
+\n\
+Prem [A] per saltar i [B]\n\
+per atacar. Prem [B] per\n\
+a llegir cartells, tambe.\n\
+Usa la palanca de control\n\
+esquerra del comandament\n\
+per moure en Mario arreu.\n\
+\n\
+Ara, dirigeix-te al\n\
+castell."))
 
 DEFINE_DIALOG(DIALOG_034, 1, 6, 30, 200, _("\
 Good afternoon. The\n\
@@ -481,10 +510,11 @@ You're no slouch, but I'm\n\
 a better sledder!\n\
 Better luck next time!"))
 
+//FET - COMPROVAT
 DEFINE_DIALOG(DIALOG_038, 1, 3, 95, 200, _("\
 Reaccionant al poder\n\
-de l'estrella, la porta\n\
-s'obre lentament."))
+de les estrelles, la \n\
+porta s'obre lentament."))
 
 DEFINE_DIALOG(DIALOG_039, 1, 4, 30, 200, _("\
 No visitors allowed,\n\
@@ -599,6 +629,7 @@ Practice, practice,\n\
 practice. You don't stand\n\
 a chance without them."))
 
+//FET - COMPROVAT
 DEFINE_DIALOG(DIALOG_047, 1, 2, 95, 200, _("\
 Hola! Preparare el\n\
 cano per a tu!"))
@@ -1738,13 +1769,14 @@ please. The enemies ahead\n\
 are even meaner, so be\n\
 careful!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_143, 1, 6, 150, 200, _("\
-You've recovered eight of\n\
-the Power Stars! Now you\n\
-can open the door with\n\
-the big Star! But Bowser\n\
-is just ahead...can you\n\
-hear the Princess calling?"))
+Has recuperat vuit\n\
+Estrelles! Ja pots obrir\n\
+la porta amb la gran\n\
+estrella. Pero en Bowser\n\
+esta en front... pots\n\
+sentir la Princesa cridar?"))
 
 DEFINE_DIALOG(DIALOG_144, 1, 6, 150, 200, _("\
 You've recovered 30\n\
@@ -2072,17 +2104,18 @@ I'm out training now,\n\
 so come back later.\n\
 //--Koopa the Quick"))
 
+//FET
 DEFINE_DIALOG(DIALOG_167, 1, 4, 30, 200, _("\
-Princess Toadstool's\n\
-castle is just ahead.\n\
+El castell de la\n\
+Princesa es davant mateix.\n\
 \n\
 \n\
-Press [A] to jump, [Z] to\n\
-crouch, and [B] to punch,\n\
-read a sign, or grab\n\
-something.\n\
-Press [B] again to throw\n\
-something you're holding."))
+Prem [A] per saltar,\n\
+[Z] per ajupir-te [B]\n\
+per colpejar, llegir un\n\
+cartell o agafar quelcom.\n\
+Prem [B] de nou per\n\
+deixar-ho anar."))
 
 DEFINE_DIALOG(DIALOG_168, 1, 5, 30, 200, _("\
 Hey! Knock it off! That's\n\
