@@ -131,39 +131,39 @@
  */
 // Main Screens
 #define TEXT_MARIO _("MARIO") // View Score Menu
-#define TEXT_SELECT_FILE _("SELECT FILE")
-#define TEXT_CHECK_FILE _("CHECK FILE")
-#define TEXT_COPY_FILE _("COPY FILE")
-#define TEXT_ERASE_FILE _("ERASE FILE")
-#define TEXT_SOUND_SELECT _("SOUND SELECT")
+#define TEXT_SELECT_FILE _("SELECCIO DE PARTIDA")
+#define TEXT_CHECK_FILE _("PUNTS DE PARTIDA")
+#define TEXT_COPY_FILE _("COPIAR PARTIDA")
+#define TEXT_ERASE_FILE _("BORRAR PARTIDA")
+#define TEXT_SOUND_SELECT _("CONFIGURACIO D AUDIO")
 #define TEXT_FILE_MARIO_A _("MARIO A")
 #define TEXT_FILE_MARIO_B _("MARIO B")
 #define TEXT_FILE_MARIO_C _("MARIO C")
 #define TEXT_FILE_MARIO_D _("MARIO D")
 
 // Menu Options
-#define TEXT_SCORE _("SCORE")
-#define TEXT_COPY _("COPY")
-#define TEXT_ERASE _("ERASE")
+#define TEXT_SCORE _("PUNTS")
+#define TEXT_COPY _("COPIAR")
+#define TEXT_ERASE _("BORRAR")
 
 // Sound Options
-#define TEXT_STEREO _("STEREO")
+#define TEXT_STEREO _("ESTEREO")
 #define TEXT_MONO _("MONO")
-#define TEXT_HEADSET _("HEADSET")
+#define TEXT_HEADSET _("AURIC.")
 
 // Misc Menu Text
-#define TEXT_SAVED_DATA_EXISTS _("SAVED DATA EXITS") // Misspell
-#define TEXT_NO_SAVED_DATA_EXISTS _("NO SAVED DATA EXISTS")
+#define TEXT_SAVED_DATA_EXISTS _("PARTIDA PLENA") // Misspell
+#define TEXT_NO_SAVED_DATA_EXISTS _("PARTIDA BUIDA")
 
 // Inside a Menu
-#define TEXT_RETURN _("RETURN")
-#define TEXT_CHECK_SCORE _("CHECK SCORE")
-#define TEXT_COPY_FILE_BUTTON _("COPY FILE")
-#define TEXT_ERASE_FILE_BUTTON _("ERASE FILE")
+#define TEXT_RETURN _("TORNA")
+#define TEXT_CHECK_SCORE _("PUNTS")
+#define TEXT_COPY_FILE_BUTTON _("COPIAR")
+#define TEXT_ERASE_FILE_BUTTON _("BORRAR")
 
 // Score Menu
-#define TEXT_HI_SCORE _("HI SCORE")
-#define TEXT_MY_SCORE _("MY SCORE")
+#define TEXT_HI_SCORE _("RECORD")
+#define TEXT_MY_SCORE _("EL TEU")
 // Score Mario Text ("☺" is the Mario face defined in the US/EU menu char table)
 #define TEXT_SCORE_MARIO_A _("☺A")
 #define TEXT_SCORE_MARIO_B _("☺B")
@@ -171,24 +171,24 @@
 #define TEXT_SCORE_MARIO_D _("☺D")
 
 // Copy Menu
-#define TEXT_COPY_IT_TO_WHERE _("COPY IT TO WHERE?")
-#define TEXT_COPYING_COMPLETED _("COPYING COMPLETED")
-#define TEXT_NO_FILE_TO_COPY_FROM _("NO EMPTY FILE")
+#define TEXT_COPY_IT_TO_WHERE _("COPIAR A ON?")
+#define TEXT_COPYING_COMPLETED _("PARTIDA COPIADA")
+#define TEXT_NO_FILE_TO_COPY_FROM _("CAP PARTIDA BUIDA")
 
 // Erase Menu
-#define TEXT_SURE _("SURE?")
-#define TEXT_YES _("YES")
+#define TEXT_SURE _("SEGUR?")
+#define TEXT_YES _("SI")
 #define TEXT_NO _("NO")
-#define TEXT_FILE_MARIO_A_JUST_ERASED _("MARIO A JUST ERASED")
+#define TEXT_FILE_MARIO_A_JUST_ERASED _("MARIO A ESBORRAT")
 
 /**
  * Menus Text (Pause, Course Completed)
  */
 // Main Courses
-#define TEXT_COURSE _("COURSE")
-#define TEXT_MYSCORE _("MYSCORE")
-#define TEXT_CONTINUE _("CONTINUE")
-#define TEXT_EXIT_COURSE _("EXIT COURSE")
+#define TEXT_COURSE _("NIVELL")
+#define TEXT_MYSCORE _("PUNTUACIO")
+#define TEXT_CONTINUE _("CONTINUAR")
+#define TEXT_EXIT_COURSE _("SORTIR DEL NIVELL")
 #ifndef VERSION_EU // "R" text is different in EU
 #define TEXT_CAMERA_ANGLE_R _("SET CAMERA ANGLE WITH R")
 #endif
@@ -205,9 +205,9 @@
 #define TEXT_HUD_HI_SCORE _("HI SCORE")
 
 // Save Options
-#define TEXT_SAVE_AND_CONTINUE _("SAVE & CONTINUE")
-#define TEXT_SAVE_AND_QUIT _("SAVE & QUIT")
-#define TEXT_CONTINUE_WITHOUT_SAVING _("CONTINUE, DON'T SAVE")
+#define TEXT_SAVE_AND_CONTINUE _("DESA I CONTINUA")
+#define TEXT_SAVE_AND_QUIT _("DESA I SURT")
+#define TEXT_CONTINUE_WITHOUT_SAVING _("CONTINUA, NO DESIS")
 
 /**
  * Ending Peach cutscene text.
