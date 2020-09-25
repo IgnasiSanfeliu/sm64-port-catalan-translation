@@ -6,7 +6,7 @@ Aquest projecte **no** està relacionat, de cap manera, amb els equips responsab
 
 Els continguts, informació i instruccions del Port de SM64 estan detallats a continuació:
 
-- Aquest repositori conté l'íntegra decompilació de Super Mario &4 (J), (U) i (E) amb excepcions menors al subsistema d'àudio.
+- Aquest repositori conté l'íntegra decompilació de Super Mario 64 (J), (U) i (E) amb excepcions menors al subsistema d'àudio.
 - Les nomenclatures i documentació del codi font i de les estructures de dades estan encara en procés.
 - Els esforços per a decompilar la ROM Shindou avança constantment a una construcció parella.
 - A part de la Nintendo 64, també pot córrer nativament a Windows i Linux.
@@ -25,6 +25,10 @@ Es requereix una còpia prèvia del joc (ROM) per a extreure'n les llibreries. A
 Per descarregar la darrera versió funcional si us plau consulteu aquest enllaç i després seguiu les instruccions detallades a baix:
 
 https://github.com/Nilcm01/sm64-port-catalan-translation/releases
+
+Per a més informació sobre els llençaments si us plau consulteu aquesta pàgina:
+
+https://nilcm01.blogspot.com/2020/09/SM64PC-CAT.html
 
 ## Construir executables nadius
 
@@ -136,6 +140,10 @@ A prior copy of the game (ROM) is required to extract the assets. This ROM has t
 To download the latest working release please refer to this link and then follow the instructions detailed below:
 
 https://github.com/Nilcm01/sm64-port-catalan-translation/releases
+
+For more information on the releases please check this link:
+
+https://nilcm01.blogspot.com/2020/09/SM64PC-CAT.html
 
 ## Building native executables
 
