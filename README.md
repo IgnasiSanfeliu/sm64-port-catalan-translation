@@ -26,6 +26,10 @@ Per descarregar la darrera versió funcional si us plau consulteu aquest enllaç
 
 https://github.com/Nilcm01/sm64-port-catalan-translation/releases
 
+Per a més informació sobre els llençaments si us plau consulteu aquesta pàgina:
+
+https://nilcm01.blogspot.com/2020/09/SM64PC-CAT.html
+
 ## Construir executables nadius
 
 ### Linux
@@ -136,6 +140,10 @@ A prior copy of the game (ROM) is required to extract the assets. This ROM has t
 To download the latest working release please refer to this link and then follow the instructions detailed below:
 
 https://github.com/Nilcm01/sm64-port-catalan-translation/releases
+
+For more information on the releases please check this link:
+
+https://nilcm01.blogspot.com/2020/09/SM64PC-CAT.html
 
 ## Building native executables
 
