@@ -5,36 +5,40 @@
 #define PLASTERED "colpejat"
 #define SCAM_ME "enganyar!\n"
 #define SCRAM "fuig"
-#define YOU_CANT_SWIM_IN_IT "No hi pots nadar."
+#define YOU_CANT_SWIM_IN_IT "No hi pots nedar."
 #define GIVE_UP "em rendeixo"
 #else
 #define COMRADES "camarades"
 #define PLASTERED "colpejat"
 #define SCAM_ME "enganyar!\n "
 #define SCRAM "fuig"
-#define YOU_CANT_SWIM_IN_IT "No hi pots nadar."
+#define YOU_CANT_SWIM_IN_IT "No hi pots nedar."
 #define GIVE_UP "em rendeixo"
 #endif
 
 DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
-Wow! You're smack in the\n\
-middle of the battlefield.\n\
-You'll find the Power\n\
-Stars that Bowser stole\n\
-inside the painting\n\
-worlds.\n\
-First, talk to the\n\
-Bob-omb Buddy. (Press [B]\n\
-to talk.) He'll certainly\n\
-help you out, and so will\n\
-his " COMRADES " in other\n\
-areas.\n\
-To read signs, stop, face\n\
-them and press [B]. Press [A]\n\
-or [B] to scroll ahead. You\n\
-can talk to some other\n\
-characters by facing them\n\
-and pressing [B]."))
+Uau! Ets al bell mig del\n\
+camp de batalla. Trobaras\n\
+l'Estrella de Poder que\n\
+en Bowser va robar dins\n\
+els mons de les pintures.\n\
+\n\
+Primerament, parla amb el\n\
+col.lega Bob-omb (prem\n\
+[B] per parlar). Tant ell\n\
+com els seus " COMRADES " \n\
+d'altres arees segur et \n\
+faran un bon cop de ma.\n\
+Per a llegir cartells, \n\
+aturat davant d'un i prem\n\
+[B]. Prem [A] o [B] per a\n\
+seguir llegint.\n\
+\n\
+\n\
+Tambe pots parlar amb\n\
+altres individus encarant-hi
+i prement [B].
+"))
 
 DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
 Watch out! If you wander\n\
