@@ -16,6 +16,7 @@
 #define GIVE_UP "em rendeixo"
 #endif
 
+// FET
 DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
 Uau! Ets al bell mig del\n\
 camp de batalla. Trobaras\n\
@@ -40,44 +41,50 @@ altres individus encarant-hi
 i prement [B].
 "))
 
+// FET
 DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
-Watch out! If you wander\n\
-around here, you're liable\n\
-to be " PLASTERED " by a\n\
-water bomb!\n\
-Those enemy Bob-ombs love\n\
-to fight, and they're\n\
-always finding ways to\n\
-attack.\n\
-This meadow has become\n\
-a battlefield ever since\n\
-the Big Bob-omb got his\n\
-paws on the Power Star.\n\
-Can you recover the Star\n\
-for us? Cross the bridge\n\
-and go left up the path\n\
-to find the Big Bob-omb.\n\
-Please come back to see\n\
-me after you've retrieved\n\
-the Power Star!"))
-
-DEFINE_DIALOG(DIALOG_002, 1, 4, 95, 200, _("\
-Hey, you! It's dangerous\n\
-ahead, so listen up! Take\n\
-my advice.\n\
+Vigila! Si voltes per aqui\n\
+t'arrisques a ser\n\
+" PLASTERED " per una\n\
+bomba d'aigua!\n\
+A aquests Bob-ombs enemics\n\
+els encanta lluitar, i\n\
+sempre troben formes\n\
+d'atacar.\n\
+Aquest prat s'ha tornat\n\
+un camp de batalla des\n\
+que el Gran Bob-omb posa\n\
+les urpes a una Estrella.\n\
+Pots recuperar l'Estrella\n\
+per nosaltres? Creua el\n\
+pont i segueix el cami\n\
+que discorre cap a\n\
+l'esquerra fins a trobar\n\
+el Gran Bob-omb.\n\
 \n\
-Cross the two\n\
-bridges ahead, then\n\
-watch for falling\n\
-water bombs.\n\
-The Big Bob-omb at the\n\
-top of the mountain is\n\
-very powerful--don't let\n\
-him grab you!\n\
-We're Bob-omb Buddies,\n\
-and we're on your side.\n\
-You can talk to us\n\
-whenever you'd like to!"))
+\n\
+Si us plau, vine a veure'm\n\
+tan bon punt hagis\n\
+recuperat l'Estrella!"))
+
+// FET
+DEFINE_DIALOG(DIALOG_002, 1, 4, 95, 200, _("\
+Ei, tu! Avant es perillos,\n\
+fes-me cas! Et donare\n\
+algun consell.\n\
+\n\
+Creua els dos ponts\n\
+d'enfront i vigila les\n\
+les bombes d'aigua que\n\
+cauen arreu.\n\
+El Gran Bob-omb al cim\n\
+de la muntanya es molt\n\
+poderos, no deixis que\n\
+t'enxampi!\n\
+Nosaltres som Bob-ombs\n\
+col.legues i som al teu\n\
+al teu costat. Parla'ns\n\
+sempre que vulguis!"))
 
 DEFINE_DIALOG(DIALOG_003, 1, 5, 95, 200, _("\
 Thank you, Mario! The Big\n\

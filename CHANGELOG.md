@@ -1,6 +1,6 @@
 --------------------- SUPER MARIO 64 PORT ~ CATALAN TRANSLATION ---------------------
 --------------------------------------CHANGELOG--------------------------------------
-Versió actual / Current version: 0.2 (beta) ~ [2020-09-25]
+Versió actual / Current version: 0.3 (beta) ~ [2021-xx-xx]
 -------------------------------------------------------------------------------------
 
 <CAT> Aquest registre de versions (changelog) està tant en català com en anglès, en
@@ -11,6 +11,22 @@ responsable de la qual.
 information please refer to it's responsible.
 
 -------------------------------------------------------------------------------------
+
+2021-xx-xx  v0.3(beta)  Nilcm01 <@PelochoRockea> [[EN PROCÉS / WORK IN PROGRESS]]
+
+    <CAT> Traducció de tots els diàlegs del joc i correccions diverses:
+
+        * text/us/dialogs.h (texts): Traduïts tots els quadres de diàleg que
+        restaven per fer.
+        * text/us/courses.h (noms de nivells): Nom del nivell "Shifting Sand Lands"
+        canviat de "Terra de la Sorra Movedissa" a "Terra de les Arenes Movedisses".
+
+    <ENG> All dialogs translated and various corrections:
+
+        * text/us/dialogs.h (texts): Translation of all remaining dialogs.
+        * text/us/courses.h (noms de nivells): Level "Shifting Sand Lands" name
+        changed from "Terra de la Sorra Movedissa" to "Terra de les Arenes
+        Movedisses".
 
 2020-09-25  v0.2(beta)  Nilcm01  <@PelochoRockea>
 
