@@ -144,19 +144,20 @@ rapid! Un home bala!\n\
 Aqui la tens, te l'has\n\
 guanyat justament!"))
 
+//FET
 DEFINE_DIALOG(DIALOG_008, 1, 4, 30, 200, _("\
-BEWARE OF CHAIN CHOMP\n\
-Extreme Danger!\n\
-Get close and press [C]^\n\
-for a better look.\n\
-Scary, huh?\n\
-See the Red Coin on top\n\
-of the stake?\n\
+COMPTE AMB EL CHOMP CADENES\n\
+Extremament perillos!\n\
+Apropat-hi i prem [C]^\n\
+per observar-lo millor.\n\
+Es espantos, eh?\n\
+Veus la moneda roja de\n\
+l'estaca?\n\
 \n\
-When you collect eight of\n\
-them, a Power Star will\n\
-appear in the meadow\n\
-across the bridge."))
+Quan n'agafis vuit\n\
+una estrella eixira\n\
+del prat de l'altre\n\
+costat del pont."))
 
 DEFINE_DIALOG(DIALOG_009, 1, 5, 30, 200, _("\
 Long time, no see! Wow,\n\
